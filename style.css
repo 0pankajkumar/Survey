@@ -1,0 +1,75 @@
+
+.leftPart{
+  display: grid;
+  font-family: 'Archivo', sans-serif;
+  text-align: right;
+  vertical-align: ;
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.rightPart{
+  display: grid;
+  font-family: 'Archivo', sans-serif;
+  text-align: left;
+  vertical-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.boxStyle {
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+}
+
+.commentBox {
+  display: flex;
+  justify-content: center;
+  align-content: center
+  width: 220px;
+  height: 45px;
+}
+
+#submit {
+  text-align: center;
+  border: 3px solid #59ace0;
+  background: #59ace0;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: 'Archivo', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Archivo black', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+form:hover {
+  color: black;
+  background: #e5f1ec;
+}
+.mainBody{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  grid-gap 10px;
+  text-align: repeat(6, right left);
+  background-color: rgba(255, 255, 255, 0.8);
+  
+}
+
