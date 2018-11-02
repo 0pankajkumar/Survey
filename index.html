@@ -1,9 +1,17 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE HTML>
+
+<html>
 
 <head>
    <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <link rel="stylesheet" href="style.css">
 </head>
+<div id="tools-used">
+    <div id="inner">
+      Tools used:<br><br>HTML<br>CSS
+    </div>
+</div>
 <h1 id="title">Cellular network wars</h1>
 <p id="description">Fill out the form for the market survey. Let's see who wins the war of networks</p>
 
@@ -32,9 +40,10 @@
       </div>
       <div class="rightPart">
          <ul>
-         <li><input type="radio" name="gender" value="male">Male</li>
-         <li><input type="radio" name="gender" value="female">Female</li>
-         <li><input type="radio" name="gender" value="none">Not disclosed</li>
+            <li><input type="radio" name="gender" value="male">Male</li>
+            <li><input type="radio" name="gender" value="female">Female</li>
+            <li><input type="radio" name="gender" value="none">Not disclosed</li>
+         </ul>
       </div>
       <div class="leftPart">
          <label id="sim-label">Choose your SIM card service:</label>
@@ -63,11 +72,13 @@
    
 </div>
      <div class="commentBox">
-         <textarea row="20" column="50">Write your comments here...</textarea>
+         <textarea row="20" column="50" placeholder="Any comments..."></textarea>
       </div>
       <div class="commentBox"> 
-         <input type="submit" id="submit">
+         <input type="submit" id="submit" value="Submit">
       </div>
      
 </form>
+
+</html>
     
