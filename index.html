@@ -5,79 +5,103 @@
 <head>
    <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style2.css">
+
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 <div id="tools-used">
     <div id="inner">
-      Tools used:<br><br>HTML<br>CSS
+      Tools used:<br>HTML<br>CSS<br>Bootstrap
     </div>
 </div>
-<h1 id="title">Cellular network wars</h1>
-<p id="description">Fill out the form for the market survey. Let's see who wins the war of networks</p>
+<h1 id="title" align="center">Cellular network wars</h1>
+<p id="description"  align="center">Fill out the form for the market survey. Let's see who wins the war of networks</p>
 
   <form id="survey-form" action="https://www.facebook.com/home.php" method="post">
-     <div class="mainBody">
-      <div class="leftPart">
-         <label id="name-label" >Enter your Name:</label>
+     <div class="container">
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="name-label" >Enter your Name:</label>
+         </div>
+         <div class="col-sm" align="left">
+            <input type="text" id="name" placeholder="Full name" class="boxStyle" required>
+         </div>
       </div>
-      <div class="rightPart">
-         <input type="text" id="name" placeholder="Full name" class="boxStyle" required>
+
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="email-label">Enter your Email ID:</label>
+         </div>
+         <div class="col-sm">
+            <input type="email" id="email" placeholder="Valid email ID" class="boxStyle" required>
+         </div>
       </div>
-      <div class="leftPart">
-         <label id="email-label">Enter your Email ID:</label>
+
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="number-label">Enter your Phone number:</label>
+         </div>
+         <div class="col-sm">
+            <input type="number" id="number" pattern="{8-10}" placeholder="Mobile or Landline" step="1" min="00000000" max="9999999999" class="boxStyle">
+         </div>
       </div>
-      <div class="rightPart">
-         <input type="email" id="email" placeholder="Valid email ID" class="boxStyle" required>
+
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="gender-label">Mention your Gender:</label>
+         </div>
+         <div class="col-sm" align="left">
+            
+               <input type="radio" name="gender" value="male">Male<br>
+               <input type="radio" name="gender" value="female">Female<br>
+               <input type="radio" name="gender" value="none">Not disclosed<br>
+            
+         </div>
       </div>
-      <div class="leftPart">
-         <label id="number-label">Enter your Phone number:</label>
+
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="sim-label">Choose your SIM card service:</label>
+         </div>
+         <div class="col-sm">
+            <select id="dropdown">
+               <option value="Tata">Tata Docomo</option>
+               <option value="Vodafone">Vodafone</option>
+               <option value="Airtel">Airtel</option>
+               <option value="Jio">Jio</option>
+            </select>
+         </div>
       </div>
-      <div class="rightPart">
-         <input type="number" id="number" pattern="{8-10}" placeholder="Mobile or Landline" step="1" min="00000000" max="9999999999" class="boxStyle">
-      </div>
-      <div class="leftPart">
-         <label id="gender-label">Mention your Gender:</label>
-      </div>
-      <div class="rightPart">
-         <ul>
-            <li><input type="radio" name="gender" value="male">Male</li>
-            <li><input type="radio" name="gender" value="female">Female</li>
-            <li><input type="radio" name="gender" value="none">Not disclosed</li>
-         </ul>
-      </div>
-      <div class="leftPart">
-         <label id="sim-label">Choose your SIM card service:</label>
-      </div>
-      <div class="rightPart">
-         <select id="dropdown">
-            <option value="Tata">Tata Docomo</option>
-            <option value="Vodafone">Vodafone</option>
-            <option value="Airtel">Airtel</option>
-            <option value="Jio">Jio</option>
-         </select>
-      </div>
-      <div class="leftPart">
-         <label id="roam-label">Where do you usually Roam?</label>
-      </div>
-      <div class="rightPart">
-         <ul>
-            <input type="checkbox" name="roam" value="mumbai">Mumbai<br>
-            <input type="checkbox" name="roam" value="pune">Pune<br>
-            <input type="checkbox" name="roam" value="Goa">Goa<br>
-            <input type="checkbox" name="roam" value="Entire Maharashtra">Entire Maharashtra<br>
-            <input type="checkbox" name="roam" value="Pan India">Pan India
-         </ul>
+
+      <div class="row">
+         <div class="col-sm" align="right">
+            <label id="roam-label">Where do you usually Roam?</label>
+         </div>
+         <div class="col-sm" align="left">
+            <ul>
+               <input type="checkbox" name="roam" value="mumbai"> Mumbai<br>
+               <input type="checkbox" name="roam" value="pune"> Pune<br>
+               <input type="checkbox" name="roam" value="Goa"> Goa<br>
+               <input type="checkbox" name="roam" value="Entire Maharashtra"> Entire Maharashtra<br>
+               <input type="checkbox" name="roam" value="Pan India"> Pan India
+            </ul>
+         </div>
       </div>
       
    
-</div>
-     <div class="commentBox">
+     <div class="commentBox" align="center">
          <textarea row="20" column="50" placeholder="Any comments..."></textarea>
       </div>
-      <div class="commentBox"> 
+      <div class="commentBox" align="center"> 
          <input type="submit" id="submit" value="Submit">
       </div>
-     
+</div>
 </form>
 
 </html>
