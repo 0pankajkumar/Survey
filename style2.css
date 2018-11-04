@@ -8,3 +8,6 @@
   margin: 0, auto;
 }
 
+body {
+	background-image: linear-gradient(white,#F5F5F5,#DCDCDC,#3B5998);
+}
